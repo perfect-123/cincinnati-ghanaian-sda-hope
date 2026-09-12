@@ -62,12 +62,12 @@ body{margin:0;background:#FFFFFF}
 #lwh .hero h1{font-family:var(--cond);font-weight:700;font-size:82px;line-height:.92;margin:0 0 22px;text-transform:uppercase}
 #lwh .hero h1 em{color:var(--gold);font-style:normal}
 #lwh .hero-sub{font-family:var(--cond);font-size:26px;letter-spacing:.04em;text-transform:uppercase;color:var(--aqua);margin:0 0 32px;font-weight:500}
-#lwh .facts{display:flex;border-top:1px solid rgba(221,239,240,.28);border-bottom:1px solid rgba(221,239,240,.28);margin-bottom:34px;flex-wrap:wrap}
-#lwh .facts div{padding:20px 26px;border-left:1px solid rgba(221,239,240,.28)}
+#lwh .facts{display:grid;grid-template-columns:auto auto auto;justify-content:start;border-top:1px solid rgba(221,239,240,.28);border-bottom:1px solid rgba(221,239,240,.28);margin-bottom:34px}
+#lwh .facts div{padding:20px 20px;border-left:1px solid rgba(221,239,240,.28)}
 #lwh .facts div:first-child{padding-left:0;border-left:0}
 #lwh .facts div:last-child{padding-right:0}
-#lwh .facts .label{color:var(--teal)}
-#lwh .facts strong{display:block;font-family:var(--cond);font-size:28px;font-weight:700;margin-top:6px}
+#lwh .facts .label{color:var(--teal);white-space:nowrap}
+#lwh .facts strong{display:block;font-family:var(--cond);font-size:clamp(16px,1.75vw,24px);font-weight:700;margin-top:6px;line-height:1.1;white-space:nowrap}
 #lwh .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 #lwh .flyer{margin:0}
 #lwh .flyer img{width:100%;height:auto;display:block;border:4px solid var(--gold)}
@@ -159,8 +159,8 @@ body{margin:0;background:#FFFFFF}
   #lwh .strip .wrap, #lwh .cards, #lwh .people, #lwh .site-footer .grid{grid-template-columns:1fr}
   #lwh .strip div{padding:24px 0;border-left:0;border-top:1px solid rgba(255,255,255,.28)}
   #lwh .strip div:first-child{border-top:0}
-  #lwh .facts div{padding:16px 0;border-left:0;border-top:1px solid rgba(221,239,240,.28);width:100%}
-  #lwh .facts div:first-child{border-top:0}
+  #lwh .facts div{padding:16px 14px}
+  #lwh .facts strong{font-size:clamp(16px,3.2vw,24px)}
   #lwh .h2, #lwh .register h2{font-size:38px}
   #lwh .facts-grid{grid-template-columns:1fr}
   #lwh .series, #lwh .schedule, #lwh .speakers, #lwh .visit{padding:56px 0}
@@ -176,6 +176,9 @@ body{margin:0;background:#FFFFFF}
   #lwh .hero h1{font-size:49px}
   #lwh .hero-sub{font-size:21px}
   #lwh .btn{width:100%;text-align:center}
+  #lwh .facts div{padding:14px 10px}
+  #lwh .facts .label{font-size:11px}
+  #lwh .facts strong{font-size:15px}
   #lwh .people{gap:42px}
 }
 
