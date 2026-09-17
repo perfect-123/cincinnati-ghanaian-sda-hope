@@ -45,7 +45,9 @@ body{margin:0;background:#FFFFFF}
 /* Header */
 #lwh .site-header{position:sticky;top:0;z-index:20;background:var(--navy);border-bottom:3px solid var(--gold)}
 #lwh .site-header .wrap{padding-top:14px;padding-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-#lwh .brand{display:flex;flex-direction:column;gap:2px}
+#lwh .brand{display:flex;align-items:center;gap:14px;min-width:0}
+#lwh .brand-logo{width:46px;height:46px;object-fit:contain;display:block;flex:none}
+#lwh .brand-text{display:flex;flex-direction:column;gap:2px;min-width:0}
 #lwh .brand-name{font-family:var(--cond);font-weight:700;font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:var(--white)}
 #lwh .brand-sub{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
 #lwh .nav{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
@@ -151,6 +153,69 @@ body{margin:0;background:#FFFFFF}
 #lwh .footer-list a{color:var(--aqua)}
 #lwh .footer-list a:hover{color:var(--gold)}
 #lwh .copyright{margin-top:36px;padding-top:20px;border-top:1px solid rgba(221,239,240,.22);font-size:13px;letter-spacing:.06em}
+
+#lwh .btn-watch{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border:1px solid var(--gold);padding:9px 16px}
+#lwh .btn-watch:hover{background:var(--gold);color:var(--navy)}
+#lwh .btn-watch .dot{width:8px;height:8px;border-radius:50%;background:currentColor;display:block}
+#lwh .outline-rows{margin-top:0}
+
+/* Watch page */
+#lwh .watch-hero{background:var(--navy);color:var(--white);padding:56px 0 64px}
+#lwh .watch-hero .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+#lwh .watch-hero h1{font-family:var(--cond);font-weight:700;font-size:clamp(40px,5.4vw,66px);line-height:.96;margin:0 0 16px;text-transform:uppercase}
+#lwh .watch-hero h1 em{color:var(--gold);font-style:normal}
+#lwh .watch-hero p{font-size:19px;line-height:1.6;color:var(--aqua);margin:0 0 28px;max-width:46ch}
+#lwh .watch-feature{display:block;position:relative;border:4px solid var(--gold)}
+#lwh .watch-feature img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+#lwh .flag{position:absolute;left:0;top:0;background:var(--navy);color:var(--white);font-family:var(--cond);font-size:15px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:8px 14px}
+#lwh .nights{padding:72px 0 88px}
+#lwh .night-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;margin-top:32px}
+#lwh .night{display:block;background:var(--white);border:1px solid var(--aqua);border-top:5px solid var(--aqua);color:var(--navy)}
+#lwh .night.live{border-top-color:var(--gold)}
+#lwh .night-thumb{display:block;position:relative}
+#lwh .night-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:grayscale(.45);opacity:.82}
+#lwh .night.live .night-thumb img{filter:none;opacity:1}
+#lwh .night-badge{position:absolute;left:0;top:0;background:var(--navy);color:var(--white);font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:7px 13px}
+#lwh .night.live .night-badge{background:var(--gold);color:var(--navy)}
+#lwh .night-body{padding:18px 20px 22px}
+#lwh .night-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+#lwh .night-day{font-family:var(--cond);font-size:19px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+#lwh .night-date{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#3d5f73}
+#lwh .night-title{display:block;font-family:var(--cond);font-size:29px;line-height:1.05;text-transform:uppercase;margin-top:8px}
+#lwh .night-sub{display:block;font-size:16px;line-height:1.45;color:#3d5f73;margin-top:6px}
+#lwh .night-action{display:block;margin-top:14px;font-family:var(--cond);font-size:18px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8aa2ad}
+#lwh .night.live .night-action{color:var(--teal)}
+#lwh .nights .note{font-size:16px;line-height:1.6;margin:28px 0 0;color:#3d5f73;max-width:70ch}
+#lwh .watch-footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end}
+
+@media (max-width:900px){
+  #lwh .watch-hero .grid{grid-template-columns:1fr;gap:32px}
+  #lwh .nights{padding:56px 0}
+}
+
+/* Program outline — tap to expand */
+#lwh .outline{margin-top:56px;max-width:720px}
+#lwh .outline-rows{display:grid;gap:12px;margin-top:20px}
+#lwh .outline-row{background:var(--white)}
+#lwh .outline-head{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;padding:22px 24px;min-height:56px;cursor:pointer;border:0;background:var(--white);color:var(--navy);font:inherit}
+#lwh .outline-row[data-open="true"] .outline-head{background:var(--navy);color:var(--white)}
+#lwh .outline-title{display:flex;flex-direction:column;gap:4px;min-width:0}
+#lwh .outline-name{font-family:var(--cond);font-size:25px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+#lwh .outline-meta{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--teal)}
+#lwh .outline-row[data-open="true"] .outline-meta{color:var(--gold)}
+#lwh .outline-mark{font-family:var(--cond);font-size:30px;font-weight:700;line-height:1}
+#lwh .outline-mark::before{content:"+"}
+#lwh .outline-row[data-open="true"] .outline-mark::before{content:"\2013"}
+#lwh .outline-body{display:none;padding:4px 24px 20px}
+#lwh .outline-row[data-open="true"] .outline-body{display:grid}
+#lwh .outline-item{display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--aqua)}
+#lwh .outline-item .t{font-family:var(--cond);font-size:20px;font-weight:400;color:#111111;white-space:nowrap}
+#lwh .outline-item .l{font-size:17px;line-height:1.4;color:var(--navy)}
+
+@media (max-width:560px){
+  #lwh .outline-item{grid-template-columns:112px minmax(0,1fr);gap:12px}
+  #lwh .outline-item .t{font-size:18px}
+}
 
 @media (max-width:900px){
   #lwh .hero{padding:48px 0 56px}

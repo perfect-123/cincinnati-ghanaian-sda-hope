@@ -15,6 +15,23 @@
     img.src = IMAGE_BASE + (RENAMED[f] || f);
   });
 
+  /* Program outline — tap to expand */
+  root.querySelectorAll(".outline-row").forEach(function (row) {
+    var head = row.querySelector(".outline-head");
+    if (!head) return;
+    head.addEventListener("click", function () {
+      var open = row.getAttribute("data-open") === "true";
+      root.querySelectorAll(".outline-row").forEach(function (r) {
+        r.setAttribute("data-open", "false");
+        r.querySelector(".outline-head").setAttribute("aria-expanded", "false");
+      });
+      if (!open) {
+        row.setAttribute("data-open", "true");
+        head.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
   /* Smooth in-page scrolling that clears the sticky navigation. */
   root.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener("click", function (e) {
