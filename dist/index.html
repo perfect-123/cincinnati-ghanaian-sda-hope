@@ -6,7 +6,7 @@
   <meta name="description" content="Join the Cincinnati Ghanaian Seventh-day Adventist Church for Living With Hope, September 16–26, 2026, at Palazio Event Venue in Fairfield, Ohio." />
   <meta name="theme-color" content="#003B5C" />
   <title>Living With Hope | Cincinnati Ghanaian SDA Church</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23003B5C'/%3E%3Cpath d='M32 11v42M20 21h24' stroke='%23F9C642' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="./assets/church-logo.png?v=2">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,15 +14,15 @@
 <div id="lwh">
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">
-        <span class="brand-name">Cincinnati Ghanaian SDA Church</span>
-        <span class="brand-sub">Living With Hope · Sept 16–26, 2026</span>
-      </div>
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/church-logo.png?v=2" alt="Cincinnati Ghanaian SDA Church logo — back to series home" />
+        <div class="brand-text">
+          <span class="brand-name">Cincinnati Ghanaian SDA Church</span>
+          <span class="brand-sub">Living With Hope · Sept 16–26, 2026</span>
+        </div>
+      </a>
       <nav class="nav">
-        <a href="#series">The Series</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#speaker">Speaker</a>
-        <a href="#visit">Visit</a>
+        <a class="btn-watch" href="watch.html"><span class="dot"></span>Watch</a>
         <a class="btn btn-gold" href="https://forms.gle/WKtoxLF4QpLR81Bj9" target="_blank" rel="noopener">Register Free</a>
       </nav>
     </div>
@@ -70,9 +70,7 @@
         <p>Come once or come every night. There is no cost, no registration required at the door, and someone will be there to welcome you.</p>
         <div class="facts-grid">
           <div><span class="label">Health Screening</span><p>Available every night for your well-being.</p></div>
-          <div><span class="label">Target Audience</span><p>Everyone, with particular outreach to the Ghanaian community.</p></div>
-          <div><span class="label">Livestream</span><p>To be confirmed — check back soon.</p></div>
-          <div><span class="label">Cost</span><p>Free. All ages, all welcome.</p></div>
+          <div><span class="label">Gift Giving</span><p>Every night — register to secure yours.</p></div>
         </div>
       </div>
     </div>
@@ -81,23 +79,50 @@
   <section class="schedule" id="schedule">
     <div class="wrap">
       <span class="eyebrow">Schedule</span>
-      <h2 class="h2">Full schedule coming soon</h2>
-      <p class="intro">Nightly topics and speakers are being finalized — check back for the complete schedule. Here are the meeting times you can plan around.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Sunday–Friday</h3>
-          <div class="time">7:00 PM – 9:00 PM</div>
-          <p>Registration and health screening open at 7:00 PM. Main program runs 7:30–8:30 PM.</p>
-        </div>
-        <div class="card teal">
-          <h3>Saturday, Sept 26</h3>
-          <div class="time">9:30 AM – 1:30 PM</div>
-          <p>The closing Sabbath celebration — worship, music, and a shared meal to finish the series together.</p>
-        </div>
-        <div class="card dark">
-          <h3>Children's Program</h3>
-          <div class="time">Every Night</div>
-          <p>Games, snacks, Bible studies and fun activities while parents attend the main meeting.</p>
+      <h2 class="h2">Program outline</h2>
+      <div class="outline">
+        <div class="outline-rows">
+          <div class="outline-row" data-open="true">
+            <button class="outline-head" type="button" aria-expanded="true">
+              <span class="outline-title">
+                <span class="outline-name">Sunday – Friday</span>
+                <span class="outline-meta">Sept 16–25 · doors 7:00 PM</span>
+              </span>
+              <span class="outline-mark" aria-hidden="true"></span>
+            </button>
+            <div class="outline-body">
+              <div class="outline-item"><span class="t">7:00 – 7:30</span><span class="l">Registration &amp; health screening</span></div>
+              <div class="outline-item"><span class="t">7:00 – 7:30</span><span class="l">Musical prelude</span></div>
+              <div class="outline-item"><span class="t">7:30 – 7:35</span><span class="l">Welcome &amp; prize</span></div>
+              <div class="outline-item"><span class="t">7:35 – 7:40</span><span class="l">Prayer requests</span></div>
+              <div class="outline-item"><span class="t">7:40 – 7:45</span><span class="l">Theme song</span></div>
+              <div class="outline-item"><span class="t">7:45 – 8:30</span><span class="l">Message &amp; appeal</span></div>
+              <div class="outline-item"><span class="t">8:30 – 8:35</span><span class="l">Announcements &amp; closing prayer</span></div>
+            </div>
+          </div>
+          <div class="outline-row" data-open="false">
+            <button class="outline-head" type="button" aria-expanded="false">
+              <span class="outline-title">
+                <span class="outline-name">Sabbath Program</span>
+                <span class="outline-meta">Sept 26 · from 9:30 AM</span>
+              </span>
+              <span class="outline-mark" aria-hidden="true"></span>
+            </button>
+            <div class="outline-body">
+              <div class="outline-item"><span class="t">9:30 – 10:45</span><span class="l">Sabbath School</span></div>
+              <div class="outline-item"><span class="t">10:45 – 10:55</span><span class="l">Announcements</span></div>
+              <div class="outline-item"><span class="t">10:55 – 11:05</span><span class="l">Tithe &amp; offering</span></div>
+              <div class="outline-item"><span class="t">11:05 – 11:25</span><span class="l">Musical prelude / opening hymn</span></div>
+              <div class="outline-item"><span class="t">11:25 – 11:30</span><span class="l">Welcome &amp; prize</span></div>
+              <div class="outline-item"><span class="t">11:30 – 11:35</span><span class="l">Opening prayer</span></div>
+              <div class="outline-item"><span class="t">11:35 – 11:40</span><span class="l">Special music</span></div>
+              <div class="outline-item"><span class="t">11:40 – 11:55</span><span class="l">Prayer requests</span></div>
+              <div class="outline-item"><span class="t">11:55 – 12:00</span><span class="l">Special music — church choir</span></div>
+              <div class="outline-item"><span class="t">12:00 – 12:05</span><span class="l">Theme song</span></div>
+              <div class="outline-item"><span class="t">12:05 – 12:50</span><span class="l">Message &amp; appeal</span></div>
+              <div class="outline-item"><span class="t">12:50 – 1:00</span><span class="l">Announcements &amp; closing prayer</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -177,6 +202,7 @@
             <a href="#series">About</a>
             <a href="#schedule">Schedule</a>
             <a href="#speaker">Speaker</a>
+            <a href="watch.html">Watch the stream</a>
             <a href="#register">Register</a>
           </div>
         </div>
